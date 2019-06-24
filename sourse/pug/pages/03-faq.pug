@@ -1,0 +1,22 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-composition/_s-composition.pug
+include ../blocks/s-faq/_s-faq.pug
+
+block title
+	title Частые вопросы 
+
+block pagecontent
+	.main-wrapper.main-wrapper--blue(style="background-image: url(img/blue-bg.jpg);")
+		+mob-mnu()
+		header
+			+top-nav()
+
+		//- +header-block-orange()
+		.container-fluid
+			+s-faq
+		+footer-blue()
+

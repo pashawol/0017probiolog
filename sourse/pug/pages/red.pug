@@ -1,0 +1,39 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-composition/_s-composition.pug
+include ../blocks/aside-nav/_aside-nav.pug
+include ../blocks/s-testimony/_s-testimony.pug
+include ../blocks/s-regimen/_s-regimen.pug
+include ../blocks/s-mechanism/_s-mechanism.pug
+include ../blocks/s-research/_s-research.pug
+include ../blocks/s-instruction/_s-instruction.pug
+include ../blocks/s-advantages/_s-advantages.pug
+
+block title
+	title Красный
+
+block pagecontent
+	.main-wrapper.main-wrapper--red(style="background-image: url(img/red-bg.jpg);")
+		+mob-mnu()
+		header
+			+top-nav()
+
+		+header-block-red()
+		.container-fluid
+			.main-row.row
+				.aside-col.col-xl-auto
+					+aside-nav
+				.col.main-col
+					+s-composition-red()
+					+s-testimony-red
+					+s-advantages-red
+					+s-composition-red()
+					//- +s-regimen
+					+s-mechanism
+					+s-research
+					//- +s-instruction
+		+footer()
+

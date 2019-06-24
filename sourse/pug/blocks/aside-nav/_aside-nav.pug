@@ -1,0 +1,22 @@
+mixin aside-nav()
+	// start aside-nav
+	+b.aside-nav.section
+
+		+e.fixed-mnu 
+			+e.toggle-mnu--js.d-xl-none
+				span
+			- var nav= {"Состав":"#","Показания*":"#","Преимущества":"#s-advantages","Схема приема":"#"," Механизм действия":"#","Клинические исследования":"#","Инструкция по применению":"#"} 
+			ul.menu
+				each linkPatch, linkName in nav
+					li.menu-item: a(href= linkPatch)= linkName
+	// end aside-nav
+mixin aside-nav-00()
+	// start aside-nav
+	+b.aside-nav.section
+
+		+e.fixed-mnu 
+			+e.toggle-mnu--js.d-xl-none
+				span
+			block
+			
+	// end aside-nav

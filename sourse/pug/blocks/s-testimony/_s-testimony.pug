@@ -1,0 +1,79 @@
+mixin s-testimony()
+	// start s-testimony
+	+b.s-testimony.section#s-testimony&attributes(attributes) 
+		.section-block
+			.row
+				+e.col.col-md-8
+					ul
+						mixin li(i,t)
+							li
+								span
+									img(src=`img/s-testimony-${i}.jpg`, alt="")
+								+e.text= t
+								block
+						+li("1","Прием антибиотиков")
+						+li("2","Дисбиоз")
+						+li("3","Вирусная и бактериальная диарея")
+						+li("4","Комплексное укрепление иммунитета") 
+							ul
+								li Во&nbsp;время вспышек инфекции
+
+								li После перенесенных заболеваний
+
+				.col.text-center
+					img(src="img/s-composition-3.jpg", alt="")
+			+e.foot
+				.smallest * Инструкция по применению Пробиолога
+				a(href="#") В чем преимущества Пробиолога?
+	// end s-testimony
+mixin s-testimony-red()
+	// start s-testimony
+	+b.s-testimony.section#s-testimony&attributes(attributes) 
+		.section-block
+			.row
+				+e.col.col-md-8
+					ul
+						mixin li(i,t)
+							li
+								span
+									img(src=`img/s-testimony-${i}.jpg`, alt="")
+								+e.text= t
+								block
+						+li("1","Прием антибиотиков")
+						+li("2","Дисбиоз")
+						+li("3","Вирусная и бактериальная диарея")
+						+li("4","Комплексное укрепление иммунитета") 
+							ul
+								li Во&nbsp;время вспышек инфекции
+
+								li После перенесенных заболеваний
+
+				.col.text-center
+					img(src="img/s-composition-red-3.png", alt="")
+			+e.foot
+				.smallest * Инструкция по применению Пробиолога
+				a(href="#") В чем преимущества Пробиолога?
+	// end s-testimony
+mixin s-testimony-orange()
+	// start s-testimony
+	+b.s-testimony.section#s-testimony&attributes(attributes) 
+		.section-block
+			.row
+				+e.col.col-md-8
+					ul
+						mixin li(i,t)
+							li
+								span
+									img(src=`img/s-testimony-${i}.jpg`, alt="")
+								+e.text= t
+								block
+						+li("orange-1","Снижение воспаления слизистой кишечника")
+						+li("3","Функциональные расстройства кишечника, включая СРК")
+						+li("orange-3","Улучшение качества жизни")  
+
+				.col.text-center
+					img(src="img/s-composition-orange-3.png", alt="")
+			+e.foot
+				.smallest * Инструкция по применению Пробиолога
+				a(href="#") В чем преимущества Пробиолога?
+	// end s-testimony

@@ -1,0 +1,118 @@
+mixin footer()
+	+b.FOOTER.footer.block-with-lazy
+		.container
+			+e.slider
+				+e.arrow--prev(href="#")
+					+icon('arrow-prev')
+				+e.slide--active(href="#")
+					img(src="img/prod-sm-1.png", alt="")
+				
+				+e.slide(href="#")
+					img(src="img/prod-sm-2.png", alt="")
+				+e.slide(href="#")
+					img(src="img/prod-sm-3.png", alt="")
+				+e.arrow--next(href="#")
+					+icon('arrow-next')
+		+e.body
+			.container
+				+e.row.row
+					.col-auto
+						+e.btn(href="#")
+							+e.icon-wrap
+								+icon('footer-i-1')
+							span.d-none.d-lg-inline Условия использования сайта
+					
+					.col-auto
+						+e.btn(href="#")
+							+e.icon-wrap
+								+icon('footer-i-2')
+							span.d-none.d-lg-inline Фармаконадзор
+
+
+
+					.col-auto
+						+e.btn(href="#")
+							+e.icon-wrap
+								+icon('footer-i-3')
+							span.d-none.d-lg-inline Майоли Спиндлер
+					
+					.col-auto
+						+e.btn(href="#")
+							+e.icon-wrap
+								+icon('footer-i-4')
+							span.d-none.d-lg-inline Напишите нам
+					.col-auto.order-xl-last
+						.row
+							.col-sm-auto.col
+								img(src="img/logo-foot.png", alt="")
+							.col-auto
+								+e.addr © 2019 «Майоли Спиндлер»
+									br
+									| 127051, г. Москва, ул. Садовая-Самотечная, 24/27,
+									| БЦ Mosenka Plaza. Телефон: +7 (495) 664-83-03
+					.col-xl
+						.form-search
+							form(action='/', method='get') 
+								//- input(type='image', alt='Search', src="<?php bloginfo( 'template_url' ); ?>/images/search.png")
+								button(type="button")
+									+icon("search")
+								input#search(type='text', name='s', placeholder="найти на сайте...")
+
+					
+					
+			.text-center
+				img.foot-text(src="img/footer-text.png", alt="")
+
+mixin footer-blue()
+	+b.FOOTER.footer.block-with-lazy
+		 
+		+e.body
+			.container
+				+e.row.row
+					.col-auto
+						+e.btn(href="#")
+							+e.icon-wrap
+								+icon('footer-i-1')
+							span.d-none.d-lg-inline Условия использования сайта
+					
+					.col-auto
+						+e.btn(href="#")
+							+e.icon-wrap
+								+icon('footer-i-2')
+							span.d-none.d-lg-inline Фармаконадзор
+
+
+
+					.col-auto
+						+e.btn(href="#")
+							+e.icon-wrap
+								+icon('footer-i-3')
+							span.d-none.d-lg-inline Майоли Спиндлер
+					
+					.col-auto
+						+e.btn(href="#")
+							+e.icon-wrap
+								+icon('footer-i-4')
+							span.d-none.d-lg-inline Напишите нам
+					.col-auto.order-xl-last
+						.row
+							.col-sm-auto.col
+								img(src="img/logo-foot.png", alt="")
+							.col-auto
+								+e.addr © 2019 «Майоли Спиндлер»
+									br
+									| 127051, г. Москва, ул. Садовая-Самотечная, 24/27,
+									| БЦ Mosenka Plaza. Телефон: +7 (495) 664-83-03
+					.col-xl
+						.form-search
+							form(action='/', method='get') 
+								//- input(type='image', alt='Search', src="<?php bloginfo( 'template_url' ); ?>/images/search.png")
+								button(type="button")
+									+icon("search")
+								input#search(type='text', name='s', placeholder="найти на сайте...")
+
+					
+					
+			.text-center
+				img.foot-text(src="img/footer-text.png", alt="")
+

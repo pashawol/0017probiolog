@@ -1,0 +1,35 @@
+
+mixin mob-mnu()
+	+b.menu-mobile--js.d-xl-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+		
+			+mnu()
+			+e.btn(href="#") Где купить?
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			.row
+				+e.col.col-xl-auto.col
+					.row
+						.col-xl-12.col-auto.order-xl-last
+							+e.logo
+								img(src="img/logo.png", alt="")
+						.col-xl-12.col-sm-auto.col
+							+e.text Пробиолог Форте № RU.77.99.11.003.Е.001789.04.17 от 12.04.2017.
+								br 
+								| Пробиолог № RU.77.99.88.003.Е.011852.12.14 от 08.12.2014 г.
+								br
+								| Пробиолог СРК №RU.77.99.11.003..002958.07.18 20.07.2018.
+				.col.d-none.d-xl-block
+					+mnu()
+				.col-auto.d-none.d-sm-block
+					+e.btn(href="#") Где купить?
+				.col-auto.d-xl-none
+					+b.toggle-menu-mobile--js
+						span
+						
+	// end top-nav

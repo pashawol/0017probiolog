@@ -1,0 +1,88 @@
+mixin s-research()
+	// start s-research
+	+b.SECTION.s-research.section#s-research&attributes(attributes)
+		.tabs2
+			.section-block.tabs2__content.active
+				+b.section-title.text-center
+					h2 Когда кишечник занемог, скорей прими Пробиолог! 
+				.row
+					+e.icon-wrap.col-sm-auto.text-center
+						
+						+icon('doctor')
+					.col
+						h3 Пожалуйста, подтвердите, что&nbsp;Вы являетесь медицинским работником для доступа  в&nbsp;данный раздел.
+					+e.btn-wrap.col-md-auto.tabs2__caption
+						.tabs2__btn(type="button").d-none 
+						+e.btn--yes.btn-success2.tabs2__btn(type="button") ДА
+						+e.btn--not.btn-danger2(type="button") НЕТ
+		
+			.section-block.section-block--tabs.tabs2__content
+				+b.tabs
+					+e.caption
+						+e.btn.active Антибиотико-ассоциированная диарея
+						+e.btn Тройная эрадикация Хеликобактер пилори
+					+e.wrap
+						+e.content.active
+							h4 
+								strong Рандомизированное мультицентровое двойное слепое плацебо-контролируемое исследование эффективности и&nbsp;безопасности лакто и&nbsp;бифидобактерий
+							.row
+								.col-md
+									img(src="img/graf-1-1.jpg", alt="")
+								.col-xxl-auto.col-lg.order-md-last
+									img(src="img/graf-2-1.jpg", alt="")
+								.col-md
+									h2 Пробиолог
+									ul
+										li в&nbsp;
+											strong 2
+											|&nbsp;раза сокращает продолжительность диареи, обусловленной приемом антибиотиков
+										li помогает:
+											ul
+												li предотвратить развитие антибиотико-ассоциированной диареи
+												li в&nbsp;
+													span 3&nbsp;раза уменьшить тяжесть диареи 
+													|  при ее&nbsp;возникновении
+
+							.smallest Bhalla A. et al., J Clin Pharmacol., 2011; Chat terjee S. et al., 2013
+						+e.content 
+							h4 
+								strong Штаммы Пробиолога восстанавливают долю бифидобактерий  в&nbsp;микробиоте толстой кишки по&nbsp;сравнению с&nbsp;тройной эрадикационной терапией 
+								br
+								| (антибиотик+ингибитор протонной помпы + метронидазол)
+							.row
+								.col
+									img(src="img/graf-1-2.jpg", alt="")
+								
+								.col-lg-auto.col-md
+									img(src="img/graf-2-2.jpg", alt="")
+							.smallest Sheu B.S. et al., Aliment Pharmacol Ther., 2002 
+
+	// end s-research
+mixin s-research-orange()
+	// start s-research
+	+b.SECTION.s-research.section#s-research&attributes(attributes)
+		.tabs2
+			.tabs2__content.active
+				+b.section-title.text-center
+					h2 Пробиотик для чувствительных натур!
+
+
+				.row
+					+e.icon-wrap.col-sm-auto.text-center
+						
+						+icon('doctor')
+					.col
+						h3 Пожалуйста, подтвердите, что&nbsp;Вы являетесь медицинским работником для доступа  в&nbsp;данный раздел.
+					+e.btn-wrap.col-md-auto.tabs2__caption
+						.tabs2__btn(type="button").d-none 
+						+e.btn--yes.btn-success2.tabs2__btn(type="button") ДА
+						+e.btn--not.btn-danger2(type="button") НЕТ
+		
+				.section-block--tabs.tabs2__content.pt-3
+				.text-center.row
+					.col-md-5
+						img.res-i(src="img/orange-tab-1.jpg", alt="")
+					.col
+						img.res-i(src="img/orange-tab-2.jpg", alt="")
+
+	// end s-research

@@ -1,0 +1,42 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-composition/_s-composition.pug
+include ../blocks/aside-nav/_aside-nav.pug
+include ../blocks/s-testimony/_s-testimony.pug
+include ../blocks/s-regimen/_s-regimen.pug
+include ../blocks/s-mechanism/_s-mechanism.pug
+include ../blocks/s-research/_s-research.pug
+include ../blocks/s-instruction/_s-instruction.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-symptoms/_s-symptoms.pug
+include ../blocks/s-requirements/_s-requirements.pug
+
+block title
+	title Синий  О Дисбиозе
+
+block pagecontent
+	.main-wrapper.main-wrapper--blue(style="background-image: url(img/blue-bg.jpg);")
+		+mob-mnu()
+		header
+			+top-nav()
+
+		//- +header-block-orange()
+		.container-fluid
+			.main-row.row
+				.aside-col.col-xl-auto
+					+aside-nav-00
+						- var nav= {"Основные причины Дисбактериоза":"#","Симптомы Дисбиоза":"#","Подходы к лечению":"#"} 
+							ul.menu
+								each linkPatch, linkName in nav
+									li.menu-item: a(href= linkPatch)= linkName
+				.col.main-col
+					.section
+						.section-block.text-center
+							img(src="img/about-1.jpg", alt="")
+					+s-symptoms 
+					+s-requirements
+		+footer-blue()
+

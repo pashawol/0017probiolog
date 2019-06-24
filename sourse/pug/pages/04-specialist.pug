@@ -1,0 +1,66 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-composition/_s-composition.pug
+include ../blocks/aside-nav/_aside-nav.pug
+include ../blocks/s-testimony/_s-testimony.pug
+include ../blocks/s-regimen/_s-regimen.pug
+include ../blocks/s-mechanism/_s-mechanism.pug
+include ../blocks/s-research/_s-research.pug
+include ../blocks/s-result/_s-result.pug 
+
+block title
+	title  О Синдроме раздраженного кишечника	
+
+block pagecontent
+	.main-wrapper.main-wrapper--blue(style="background-image: url(img/blue-bg.jpg);")
+		+mob-mnu()
+		header
+			+top-nav()
+
+		//- +header-block-orange()
+		.container-fluid
+			.main-row.row
+				.aside-col.col-xl-auto
+					+aside-nav-00
+						- var nav= {"Распространенность СРК":"#","Патогенез СРК":"#","Механизм действия  Пробиолога СРК":"#","Результаты клинического исследования":"#"} 
+							ul.menu
+								each linkPatch, linkName in nav
+									li.menu-item: a(href= linkPatch)= linkName
+				.col.main-col
+					.section
+						.section-block
+							.text-center
+								img(src="img/ver.jpg", alt="")
+							.smallest 1. Canavan, C., et al. Clin Epidemiol, 2014. 6: стр. 71-80.
+								br
+								| 2. World Gastroenterology Organisation, Irritable Bowel Syndrome: a Global Perspective : с поправками от Сентября 2015. 2015
+								br
+								| 3. Ford, A.C. and N.J. Talley BMJ, 2012. 345: стр. e5836.
+					
+					+b.section
+						.section-block.pt-0
+							+e.label--top СВЯЗЬ МИКРОФЛОРЫ И СИМПТОМОВ СРК
+
+							.text-center
+								h2 Нарушение микрофлоры
+								.row
+									.col-md-6
+										img(src="img/violation-1.jpg", alt="") 
+									
+									.col-md-6
+										img(src="img/violation-2.jpg", alt="") 
+									+e.foot  Пробиолог СРК позволяет разорвать коморбидность  между СРК и&nbsp;нарушением микрофлоры
+									
+							.smallest.mw-900 1. КЦЖК – короткоцепочечные жирные кислоты, Salonen Microbiology 2010; Serra NeurogastroeneteolMotil 2010; Tana NeurogastroeneteolMotil 2010.     Hentges D.J. Humanintestinal microflora in helth and disease.// New York: Academic Press,1983
+					+b.section
+						.section-block
+							.video-wrap
+								+video
+
+					
+					+s-result
+		+footer-blue()
+

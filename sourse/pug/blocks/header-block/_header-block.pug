@@ -1,0 +1,63 @@
+mixin header-block()
+	// start header-block
+	+b.header-block.section&attributes(attributes)
+		.container
+			.row
+				.col.order-md-last
+					+e.img-wrap
+						img(src="img/prod-1.png", alt="")
+				.col-md-auto
+					+e.text-block
+						+e.title  Натуральная микрофлора*
+						+e.text от  
+							| 
+							strong 1 млрд. 
+							| бактерий 
+							| в&nbsp;
+							strong 1&nbsp;капсуле
+					+e.btn(href="#") УЗНАТЬ БОЛЬШЕ 
+	// end header-block
+
+mixin header-block-red()
+	// start header-block
+	+b.header-block.section&attributes(attributes)
+		.container
+			.row
+				.col.order-md-last
+					+e.img-wrap
+						img(src="img/prod-2.png", alt="")
+				.col-md-auto
+					+e.text-block
+						+e.title  Цветущая  микрофлора  кишечника 
+
+ 
+
+						+e.text от  
+							| 
+							strong 2,5 млрд. 
+							| бактерий 
+							| в&nbsp;
+							strong 1&nbsp;капсуле
+					+e.btn(href="#") УЗНАТЬ БОЛЬШЕ 
+	// end header-block
+
+mixin header-block-orange()
+	// start header-block
+	+b.header-block.section&attributes(attributes)
+		.container
+			.row
+				.col.order-md-last
+					+e.img-wrap
+						img(src="img/prod-3.png", alt="")
+				.col-md-auto
+					+e.text-block
+						+e.title  Редкие* штаммы 
+							| 
+							| для чувствительных
+							| 
+							| натур 
+
+					+e.btn(href="#") УЗНАТЬ БОЛЬШЕ 
+					.smallest.text-white *Согласно данным DSM на март 2019 г. Пробиолог СРК- единственный пробиотик с комбинацией лактобактерий плантарум и педиококков
+	// end header-block
+

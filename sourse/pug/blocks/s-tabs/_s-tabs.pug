@@ -1,0 +1,28 @@
+mixin s-tabs()
+	// start s-tabs
+	+b.SECTION.s-tabs.section&attributes(attributes)
+		+e.caption
+			+e.btn.active
+				span Дисбиоз
+
+			+e.btn
+				span Прием антибиотиков 
+			+e.btn
+				span Психологические проблемы
+		.section-block
+			+e.content.text-center.active
+				h2 Кишечная микробиота может воздействовать на&nbsp;головной мозг
+				img(src="img/tab-1.jpg", alt="")
+			
+			+e.content.text-center
+				h2 Факторы риска развития постинфекционного  варианта СРК
+					small 1,2
+
+
+				img(src="img/tab-2.jpg", alt="")
+				.smallest.text-left 1. Dunlop SP., Jenkins&nbsp;D., Spiller RS. Distinctive clinical, psychological and histological features of&nbsp;postinfectious irritable bowel syndrome. American J&nbsp;Gastroenterology 2003; 98 (7):1578&nbsp;&mdash; 1583. 
+					br
+					| 2. Tazume&nbsp;S., Ozawa&nbsp;A., Yamamoto&nbsp;T. et&nbsp;al. Ecological study on&nbsp;the intestinal bacteria flora of&nbsp;patients with diarrhea. Clin Infect Dis 1993; 16&nbsp;(l&nbsp;2):77-82)
+			+e.content.text-center
+				img(src="img/tab-3.jpg", alt="")
+	// end s-tabs

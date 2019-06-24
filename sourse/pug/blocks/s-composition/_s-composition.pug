@@ -1,0 +1,50 @@
+mixin s-composition()
+	// start s-composition
+	+b.SECTION.s-composition.section#s-composition&attributes(attributes) 
+		.section-block
+			+b.section-title
+				h2 
+					strong Когда кишечник занемог, скорей прими Пробиолог! 
+					| 
+					br
+					| От&nbsp;1&nbsp;миллиарда бактерий в&nbsp;1&nbsp;капсуле 
+			ul
+				- for (var x = 1; x < 4; x++)
+					li
+						img(src=`img/s-composition-${x}.jpg`, alt="")
+			.smallest * Инструкция по применению Пробиолога
+	// end s-composition
+mixin s-composition-red()
+	// start s-composition
+	+b.SECTION.s-composition.section#s-composition&attributes(attributes) 
+		.section-block
+			+b.section-title
+				h2 
+					strong Когда кишечник занемог, скорей прими Пробиолог! 
+					| 
+					br
+					| От&nbsp;1&nbsp;миллиарда бактерий в&nbsp;1&nbsp;капсуле 
+			ul
+				- for (var x = 1; x < 4; x++)
+					li
+						img(src=`img/s-composition-red-${x}.png`, alt="")
+			.smallest * Инструкция по применению Пробиолога
+	// end s-composition
+mixin s-composition-orange()
+	// start s-composition
+	+b.SECTION.s-composition.section#s-composition&attributes(attributes) 
+		.section-block
+			+b.section-title.text-center
+				h2 
+					strong Пробиотик для чувствительных натур
+			.h2.strong не&nbsp;менее 3х&nbsp;млрд. бактерий в&nbsp;1&nbsp;капсуле*
+			ul
+					//- - for (var x = 1; x < 4; x++)
+					li
+						img(src=`img/s-composition-orange-1.png`, alt="")
+					
+					li
+						img(src=`img/s-composition-orange-3.png`, alt="")
+					
+			.smallest * Инструкция по применению Пробиолога
+	// end s-composition

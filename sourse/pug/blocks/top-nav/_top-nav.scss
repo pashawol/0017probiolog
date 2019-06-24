@@ -1,0 +1,362 @@
+.top-nav {
+	position: fixed;
+	z-index: 900;
+	left: 0;
+	top: 0;
+	width: 100%;
+	@include media-breakpoint-up(xl) {
+		padding-top: 0px;
+	}
+	padding-top: 10px;
+		&__text{
+			color: #ffffff;
+			font-family: "Myriad Pro - Cond";
+			font-size: rem(10px);
+			font-weight: 400;
+			// Text style for "Пробиолог"
+			letter-spacing: rem(0.26px);
+			@include media-breakpoint-up(xl) {
+
+				// padding-top: rem(10);
+				// padding-bottom: rem(10);
+				padding-top: rem(20);
+			}
+			@include media-breakpoint-up(xxl){
+				
+				padding-bottom: rem(10);
+			}
+			line-height: 1;
+			width: rem(270);
+			text-align: left;
+		}
+		&__col{
+			@include media-breakpoint-up(xl) {
+				
+				max-width: rem(270);
+			}
+			text-align: center;
+			img{
+				@include media-breakpoint-up(sm) {
+					
+					width: rem(70);
+				}
+				width: rem(40);
+				
+				height: auto;
+			}
+		}
+		&__logo{
+								@include media-breakpoint-up(xl) {
+			position: absolute;
+			text-align: center;
+			width: 100%;
+								}
+		}
+
+		.menu{
+			display: flex;
+			// @include roww(20);
+			
+			
+			// @media (min-width: 1700px) {
+
+			// 	margin-left: rem(-20px);
+			// 	margin-right: rem(-20px);
+			// }
+			margin-left: auto;
+			margin-right: auto;
+			// margin-left: rem(-10px);
+			// margin-right: rem(-10px);
+			justify-content: center; 
+			background-color: #231f20;
+			padding-top: rem(20) ;
+			padding-bottom: rem(18);
+			@include media-breakpoint-up(xxl) {
+
+				max-width: rem(1123);
+			}
+			// max-width: rem(1073);
+			border-radius: 0 0 rem(100) rem(100);
+			
+			&-item{
+				// max-width: 100%;
+				// flex-grow: 1;
+				list-style-type: none;
+				@media (min-width: 1700px) {
+						
+					// padding: rem(8) rem(5);
+					padding-left: rem(20);
+					padding-right: rem(20);
+				}
+				padding-left: rem(10);
+				padding-right: rem(10);
+				// padding: rem(8) rem(5);
+				&:not(:last-child){
+					position: relative;
+					&::after{
+						content: '';
+						position: absolute;
+						top: 0;
+						right: rem(-2);
+						height: 100%;
+						background-color: #f8a83a;
+						width: rem(4);
+					}
+				}
+				
+				a{
+					color: #ffffff !important;
+					font-weight: bold;
+					display: block;
+					text-align: center;
+					border-bottom: rem(6) solid transparent;
+					@media (min-width: 1700px) {
+						
+						// padding: rem(8) rem(5);
+					}
+					padding: rem(8) rem(2);
+					
+				}
+
+			}
+			.current-menu-item{
+				a{
+					text-decoration: none !important;
+					border-color: $primary;
+				}
+			}
+		}
+
+		&__btn{
+			@extend .btn;
+			@extend .btn-white;
+			font-size: rem(18);
+			@media (min-width: 1700px) {
+
+				width: rem(179);
+				margin-right: rem(30);
+			}
+			padding-top: rem(10px);
+			padding-bottom: rem(10);
+			// padding: rem(10) rem(10);
+			@include media-breakpoint-up(xl) {
+
+				margin-top: rem(28);
+			}
+			font-weight: bold;
+		}
+
+	// 
+	@include media-breakpoint-up(xl) {
+		.container{
+			max-width: 1920px;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {}
+
+	@include media-breakpoint-up(md) {}
+
+	@include media-breakpoint-up(sm) {}
+
+	@include media-breakpoint-up(xs) {}
+
+	// 
+	@include media-breakpoint-between(md, xl) {}
+
+	// 
+	@include media-breakpoint-only(xs) {}
+
+	@include media-breakpoint-only(sm) {}
+
+	@include media-breakpoint-only(md) {}
+
+	@include media-breakpoint-only(lg) {}
+
+	@include media-breakpoint-only(xl) {}
+
+	// 
+	@include media-breakpoint-down(xl) {}
+
+	@include media-breakpoint-down(lg) {
+		.row{
+			align-items: center;
+		}
+	}
+
+	@include media-breakpoint-down(md) {}
+
+	@include media-breakpoint-down(sm) {}
+
+	@include media-breakpoint-down(xs) {
+		.row{
+			@include roww(5);
+		}
+	}
+}
+
+// мобильное меню
+
+// мобильное меню
+$h: em(2);
+
+.toggle-menu-mobile {
+	display: block;
+	height: $h* 20;
+	// margin-top: 15px;
+	margin-left: 0;
+	// position: fixed;
+	position: relative;
+	z-index: 1005 !important;
+	right: 0;
+	padding: 4px;
+	border-radius: 5px; 
+	background-color: #ffffff;
+
+
+	span:after,
+	span:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: $h * 3;
+	}
+
+	span:after {
+		top: $h * 6;
+	}
+
+	span {
+		position: relative;
+		display: block;
+	}
+
+	span,
+	span:after,
+	span:before {
+		// width: 32px;
+		font-size: 32px;
+		width: 1em;
+		height: $h;
+		background-color: $primary;
+		transition: all 0.3s;
+		backface-visibility: hidden;
+		border-radius: 6px;
+	}
+
+	&.on {
+		opacity: 0;
+	}
+
+	&.on span {
+		background-color: transparent;
+	}
+
+	&.on span:before {
+		transform: rotate(45deg) translate(em(-1), 0px);
+	}
+
+	&.on span:after {
+		transform: rotate(-45deg) translate(em(3), em(-4));
+	}
+}
+
+.menu-mobile {
+	position: fixed !important;
+	z-index: 999;
+	max-width: 85%;
+	height: 101vh;
+	width: 280px;
+	top: 0;
+	// left: 0;
+	right: 0;
+	transform: translate(100%, 0);
+	@include mt(.6);
+	will-change: transform;
+
+	background-image: inherit;
+	background-position: top right;
+	&__inner {
+		background-image: inherit;
+		background-color: #c3c3c3;
+		padding: 5% 0;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		height: 100%;
+	}
+
+	&.active {
+		transform: translate(0, 0);
+
+		.toggle-menu-mobile {
+			opacity: 1;
+		}
+	}
+
+	.toggle-menu-mobile {
+		// position: relative;
+		cursor: pointer;
+		margin-left: -15%;
+		position: absolute;
+		opacity: 0;
+		left: 0;
+		right: auto;
+		color: #FFF;
+		top: 10px;
+		z-index: 9999;
+		background-color: transparent;
+
+		span,
+		span:after,
+		span:before {
+			background-color: #FFF;
+		}
+
+		&.on {
+			opacity: 1;
+
+			span {
+				background-color: transparent;
+			}
+		}
+	}
+
+	ul {
+		position: relative;
+	}
+
+	li {
+		display: block;
+		margin: 0;
+		border-top: 1px solid rgba(255, 255, 255, .13);
+
+		a {
+			// font-size: 16px;
+
+			padding: 10px;
+			display: block;
+			color: $body-color;
+ 
+		}
+	}
+
+	&__btn{
+		@extend .btn;
+		@extend .btn-white;
+		font-size: rem(18);
+		margin-left: 15px;
+		@media (min-width: 1700px) {
+
+			width: rem(179);
+			margin-right: rem(30);
+		}
+		padding-top: rem(10px);
+		padding-bottom: rem(10);
+		// padding: rem(10) rem(10);
+		@include media-breakpoint-up(xl) {
+
+			margin-top: rem(28);
+		}
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,19 @@
+mixin s-symptoms()
+	// start s-symptoms
+	+b.SECTION.s-symptoms.section.text-center
+		.section-block
+			ul
+				li
+					img(src="img/osn-simptomy.jpg", alt="")
+				li
+					ul
+						mixin item(i,t)
+							li
+								span: img(src=`img/osn-simptomy-${i}.png`, alt="")
+								= t
+						+item("1","Общая слабость")
+						+item("2","Поносы, запоры")
+						+item("3","Снижение аппетита")
+						+item("4","Боли  в животе")
+						+item("5","Повышенное  газообразование в кишечнике")
+	// end s-symptoms
