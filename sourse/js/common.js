@@ -14,13 +14,13 @@ jQuery(document).ready(function ($) {
 	JSCCommon.mobileMenu(); 
 
 
-	$(".aside-nav__fixed-mnu").stick_in_parent({
-		parent: '.main-row',
-		offset_top: $(".top-nav").height() + 30,
-		inner_scrolling: true,
-		// // recalc_every: 1,
-		//  recalc_every: true,
-	});
+	// $(".aside-nav__fixed-mnu").stick_in_parent({
+	// 	parent: '.main-row',
+	// 	offset_top: $(".top-nav").height() + 30,
+	// 	inner_scrolling: true,
+	// 	// // recalc_every: 1,
+	// 	//  recalc_every: true,
+	// });
 
  
 	// / закрыть меню при горизонтальном свайпе

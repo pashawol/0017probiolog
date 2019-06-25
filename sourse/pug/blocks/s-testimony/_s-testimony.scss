@@ -58,7 +58,10 @@
 	}
 	img{
 		@extend .res-i;
-		max-width: 70%;
+		@include media-breakpoint-down(lg) {
+
+			max-width: 70%;
+		}
 	}
 
 	&__foot{
