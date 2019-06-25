@@ -70,6 +70,12 @@
 		text-align: center;
 		color: $success2; 
 	}
+	img{
+		max-width: 65%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
 		 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

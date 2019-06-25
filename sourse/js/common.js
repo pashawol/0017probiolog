@@ -1,5 +1,6 @@
-var btnToggle = $(".toggle-menu-mobile--js")
-		menu = $(".menu-mobile--js")
+var $ = jQuery;
+var btnToggle = $(".toggle-menu-mobile--js"),
+		menu = $(".menu-mobile--js");
 
 jQuery(document).ready(function ($) {
 

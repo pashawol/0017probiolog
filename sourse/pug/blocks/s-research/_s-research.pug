@@ -61,28 +61,29 @@ mixin s-research()
 mixin s-research-orange()
 	// start s-research
 	+b.SECTION.s-research.section#s-research&attributes(attributes)
-		.tabs2
-			.tabs2__content.active
-				+b.section-title.text-center
-					h2 Пробиотик для чувствительных натур!
+		.section-block
+			.tabs2
+				.tabs2__content.active
+					+b.section-title.text-center
+						h2 Пробиотик для чувствительных натур!
 
 
-				.row
-					+e.icon-wrap.col-sm-auto.text-center
-						
-						+icon('doctor')
-					.col
-						h3 Пожалуйста, подтвердите, что&nbsp;Вы являетесь медицинским работником для доступа  в&nbsp;данный раздел.
-					+e.btn-wrap.col-md-auto.tabs2__caption
-						.tabs2__btn(type="button").d-none 
-						+e.btn--yes.btn-success2.tabs2__btn(type="button") ДА
-						+e.btn--not.btn-danger2(type="button") НЕТ
-		
+					.row
+						+e.icon-wrap.col-sm-auto.text-center
+							
+							+icon('doctor')
+						.col
+							h3 Пожалуйста, подтвердите, что&nbsp;Вы являетесь медицинским работником для доступа  в&nbsp;данный раздел.
+						+e.btn-wrap.col-md-auto.tabs2__caption
+							.tabs2__btn(type="button").d-none 
+							+e.btn--yes.btn-success2.tabs2__btn(type="button") ДА
+							+e.btn--not.btn-danger2(type="button") НЕТ
+			
 				.section-block--tabs.tabs2__content.pt-3
-				.text-center.row
-					.col-md-5
-						img.res-i(src="img/orange-tab-1.jpg", alt="")
-					.col
-						img.res-i(src="img/orange-tab-2.jpg", alt="")
+					.text-center.row
+						.col-md-5
+							img.res-i(src="img/orange-tab-1.jpg", alt="")
+						.col
+							img.res-i(src="img/orange-tab-2.jpg", alt="")
 
 	// end s-research

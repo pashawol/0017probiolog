@@ -44,6 +44,10 @@
 			}
 		}
 	}
+
+	img{
+		max-width: 80%;
+	}
 		 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

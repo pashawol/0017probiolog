@@ -1,3 +1,5 @@
+
+
 mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
@@ -37,7 +39,7 @@ mixin footer()
 							span.d-none.d-lg-inline Майоли Спиндлер
 					
 					.col-auto
-						+e.btn(href="#")
+						+e.btn.popup-with-move-anim(href="#modal-text")
 							+e.icon-wrap
 								+icon('footer-i-4')
 							span.d-none.d-lg-inline Напишите нам
@@ -90,7 +92,7 @@ mixin footer-blue()
 							span.d-none.d-lg-inline Майоли Спиндлер
 					
 					.col-auto
-						+e.btn(href="#")
+						+e.btn.popup-with-move-anim(href="#modal-text")
 							+e.icon-wrap
 								+icon('footer-i-4')
 							span.d-none.d-lg-inline Напишите нам

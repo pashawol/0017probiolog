@@ -12,7 +12,7 @@
 			// margin-top: rem(-20);
 		}
 		padding-bottom: rem(10);
-			@extend .col-sm; 
+			@extend .col; 
 			&:nth-child(1){
 				@extend .col-lg; 
 				@extend .col-12; 
@@ -21,6 +21,9 @@
 	}
 	img{
 		@extend .res-i;
+		@include media-breakpoint-down(xl) {
+			max-width: 80%;
+		}
 	}
 		 
 	@include media-breakpoint-up(xl) {

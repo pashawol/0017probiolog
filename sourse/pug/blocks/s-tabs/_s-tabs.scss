@@ -1,5 +1,7 @@
 .s-tabs {
-	 
+	 img{
+		 max-height: rem(400);
+	 }
 	 
 		@include media-breakpoint-up(lg) {
 			padding-top: rem(20);
@@ -21,6 +23,7 @@ display: flex;
 position: relative;
 overflow: hidden;
 margin-bottom: rem(30);
+margin-left: rem(40);
 	}
 	&__btn{
 		position: relative;

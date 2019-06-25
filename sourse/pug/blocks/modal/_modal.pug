@@ -32,15 +32,25 @@ mixin modal()
 	//- 			.h3 Скоро с Вами свяжутся
 	//- 			br 
 
-	+form-wrap()(id="modal-call" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
-		.text-center
-			+e.title.h3.ttu Обратный звонок
-			p Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут
-		+input("text","Ваше Имя")(required) 
-		+input("tel","Ваш телефон")(required)
-		//- +input("email","Ваше email")(required)
-		//- +text( "Комментарий")
-		+e.INPUT.btn.btn.btn-block.btn-warning.mb-4(type="submit" value="Рассчитать") 
-		+polite()
-	// #modal-call
+	+b.modal-win(id="modal-text" class="zoom-anim-dialog mfp-hide" )
+		h3 Условие использования сайта
+		p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis pariatur, tempore harum adipisci commodi itaque voluptatibus? Incidunt nobis a dolor, sequi architecto harum qui quis sed magnam? Earum, debitis. Quos.
+		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, sit. Magni at quibusdam architecto rem libero quo distinctio officia necessitatibus.
+		p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+		blockquote Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Буквенных скатился злых до путь, необходимыми взгляд назад снова пустился!
+			| 
+			a(href="#") ссылка подчеркнутая
+
+		p Офис компании
+		+e.foot
+			.row
+				.col-auto
+					img(src="img/logo2.png", alt="")
+				.col 127051, г. Москва,л. Садовая-Самотечная, 24/27, БЦ&nbsp;&laquo;Mosenka Plaza&raquo; 
+					br
+					| Телефон: +7(495)664-83-03, email: vopros@mayoly.ru
+
+
+	// #modal-text
+
 	// modal
